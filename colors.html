@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="The child site for the main page that sets up the color page"">
+  <meta name="keywords" content="jewelry, matching, color creation, create">
+  <meta name="author" content="-">
+  <meta name="viewport" content="width=device-width">
+
+  <title> Match-and-Make Jewelry </title>
+
+  <link rel="stylesheet" href="color-style.css">
+</head>
+
+
+
+
+
+
+  <body>
+
+    <!-- Go back to main page button -->
+    <a href="index.html" button class="button-link back-button"> Go Back</a>
+
+    <!-- Title of the page -->
+    <h1 align="center"> Colors - Match-and-Make Jewelry</h1>
+
+    <!-- Search bar for the user to enter a color -->
+    <div class="search-page">
+      <h2 class="intro-text"> Please enter some colors to see beads and charms that may match! (enter 'all' to see all photos or 'pink' or 'green' as examples!) </h2>
+      <input type="text" id="search-input" placeholder="Search for a new color">
+      <button id="search-button"> Search </button>
+    </div>
+
+
+
+    <!-- Makes it so that everything is hidden until the user searches for a color -->
+    <div id="results" class="hidden">
+
+      <!-- Section for the Beads resembling the theme -->
+      <h3 align="left"> Beads resembling your theme </h3>
+      <div class="gallery-container hidden" id="bead-gallery"> </div>
+
+      <!-- Section for the Charms resembling the theme -->
+      <h3 align="left"> Charms resembling your theme </h3>
+      <div class="gallery-container hidden" id="charm-gallery"> </div>
+
+
+
+      <!-- Button to continue to the next page -->
+      <a href="thank-you.html" class="btn flash-slide flash-slide--black"> Continue </a>
+
+    </div>
+
+
+  <script src="colors.js"></script>
+</body>
+
+</html>
