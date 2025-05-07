@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="A website to match jewelry">
+  <meta name="keywords" content="jewelry, matching, matching jewelry">
+  <meta name="author" content="-">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"">
+  <title> Match-and-Make Jewelry </title>
+  <link  rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+
+
+  
+<body>
+
+  <div style="position: relative; width: 300px; height:200px; margin: 0 auto; overflow: visible;">
+    <!-- Curved title -->
+    <svg width="300" height="200" viewBox="0 0 300 150" 
+         xmlns="http://www.w3.org/2000/svg"
+         style="position: absolute; top: 5px; left: 0; z-index: 2;">
+      <defs>
+        <path id="curve" d="M50,100 A100,100 0 0,1 250,100" fill="transparent"/>
+      </defs>
+      <text font-size="45" fill="#333">
+        <textPath href="#curve" startOffset="50%" text-anchor="middle">
+          Match-and-Make
+        </textPath>
+      </text>
+    </svg>
+
+    <!-- Necklace image -->
+    <img src="Index + About images/necklace.png" alt="Gold Necklace" style="position: absolute; top: -65px; left: 50%; transform: translateX(-50%);
+    width: 280px; height: 280px; border-radius: 5%; z-index: 1;">
+  </div>
+
+   <!-- Jewelry title text -->
+  <div style="position: absolute; top: 148px; left: 50%; transform: translateX(-50%); font-size: 40px; color: #333;">
+    Jewelry
+  </div>
+
+
+<div class="button-container">
+  <hr class="divider">
+</div>
+<br>
+
+  
+  <p align="center"> Welcome to the Match-and-Make Jewelry picker! Match your ideal colors, themes, & beads to make your perfect jewelry combination!</p>
+  <br>
+  <p align="center"> Start by choosing what jewelry you'd like, and the metal type: </p>
+
+
+  
+  <!-- Dropdown menu for jewelry type and material type -->
+  <div class="dropdown-wrapper">
+    <div class="dropdown">
+      <select name="jewelry-type" id="jewelry-type">
+        <option value="" hidden> Select Jewelry Type </option>
+        <option value="necklace"> Necklace </option>
+        <option value="bracelet"> Bracelet </option>
+        <option value="earrings"> Earrings </option>
+        <option value="ring"> Ring </option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <select name="material-type" id="material-type">
+        <option value="" hidden> Select Material Type </option>
+        <option value="gold"> Gold </option>
+        <option value="silver"> Silver </option>
+        <option value="sterling silver"> Sterling Silver </option>
+        <option value="rhodium"> Rhodium </option>
+        <option value="Stretchy Cord"> Stretchy Cord </option>
+      </select>
+    </div>
+  </div>
+
+
+  
+  <br>
+  <p align="center"> Next, chose if you've got a theme in mind, or a color!</p>
+
+
+  
+  <!-- Button containers for theme & color -->
+  <div class="button-container">
+    <a href="themes.html" class="rainbow-button"> Start with a theme! </a>
+    <a href="colors.html" class="rainbow-button"> Start with a color </a>
+    <br>
+    <hr class="divider">
+    <a href="about.html" class="button-link about-button"> About Us</a>
+  </div>
+
+
+
+  <!-- Footer with social media links -->
+  <footer style="text-align:left; margin-top: -96px; padding-left: 5%;">
+    <p>&copy; 2025 Match-and-Make Jewelry</p>
+    <a href="https://www.instagram.com/a.starry.shop/"><img src="Index + About images/Insta logo.png" alt="Circular Instagram Logo" style="width: 20px; height: 20px; margin-top: 5px; margin-right: 50px; margin-left: 25px;"></a>
+    <a href="mailto:astarryshop@gmail.com"><img src="Index + About images/Email logo.png" alt="Circular Email Logo" style="width: 20px; height: 20px; margin-top: 5px; margin-right: 50px;"></a>
+    <a href="https://astarryshop.etsy.com"><img src="Index + About images/Etsy Logo.png" alt="Circular Etsy Logo" style="width: 20px; height: 20px; margin-top: 5px; margin-right: 50px;"></a>
+  </footer>
+  
+
+</body>
+
+</html>
